@@ -23,7 +23,7 @@ def collect_main_page_data(url):
 def collect_all_urls():
     """
     Parse a json file with categories
-    :return: A list of unique subcategories urls
+    :return: A list of unique subcategories subcategory_info
     """
     with open('categories_info.json', 'r', encoding='utf-8') as file:
         data_json = json.load(file)
@@ -33,7 +33,7 @@ def collect_all_urls():
     for elem in data_json:
         test_json = JsonParser(elem)
         test_json.start()
-        all_urls += test_json.urls
+        all_urls += test_json.subcategory_info
 
     print(all_urls)
     print(len(all_urls))
