@@ -91,14 +91,16 @@ def number_of_products_links(subcategories_info):
             subject_query = split_query[1]
         elif split_query[0][:4] == 'subj':
             kind_query = ''
-            subject_query = split_query[0]
+            subject_query = query
         else:
             continue
 
         url = f'https://catalog.wb.ru/catalog/{shard}/v4/filters?appType=1&couponsGeo=12,3,18,15,21&curr=rub&dest=-1029256,-102269,-2162196,-1257786&emp=0&{kind_query}&lang=ru&locale=ru&pricemarginCoeff=1.0&reg=0&regions=80,64,83,4,38,33,70,68,69,86,75,30,40,48,1,66,31,22,71&spp=0&{subject_query}'
-        urls_list.append(url)
+        subcategory_name = subcategory['name']
+        urls_list.append({subcategory_name: url})
 
-    # print(urls_list)
+
+    print(urls_list)
     # print(len(urls_list))
     return urls_list
 
