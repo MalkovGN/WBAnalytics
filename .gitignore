@@ -143,3 +143,6 @@ categories_info.json
 test_parser.py
 check_proxy.py
 test_orders_reviews_update.py
+parse_logic.drawio
+
+tests/
