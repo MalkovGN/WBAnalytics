@@ -1,20 +1,40 @@
 class JsonParser:
     """
     Subcategories json parser class
-    Getting unique urls
+    Getting unique subcategory_info
     """
     def __init__(self, data):
         self.data = data
-        self.urls = []
+        self.subcategory_info = []
 
     def start(self):
         if 'childs' in self.data.keys():
             self.unpack(self.data['childs'])
         else:
             if self.data['url'].startswith('/'):
-                self.urls.append('https://www.wildberries.ru' + self.data['url'])
+                try:
+                    self.subcategory_info.append(
+                        {
+                            'name': self.data['name'],
+                            'url': 'https://www.wildberries.ru' + self.data['url'],
+                            'shard': self.data['shard'],
+                            'query': self.data['query'],
+                        }
+                    )
+                except KeyError:
+                    self.subcategory_info.append(
+                        {
+                            'name': self.data['name'],
+                            'url': 'https://www.wildberries.ru' + self.data['url'],
+                        }
+                    )
             else:
-                self.urls.append(self.data['url'])
+                self.subcategory_info.append(
+                    {
+                        'name': self.data['name'],
+                        'url':  self.data['url'],
+                    }
+                )
 
     def unpack(self, sub_category):
         for element in sub_category:
@@ -23,6 +43,26 @@ class JsonParser:
                 self.unpack(element)
             else:
                 if element['url'].startswith('/'):
-                    self.urls.append('https://www.wildberries.ru' + element['url'])
+                    try:
+                        self.subcategory_info.append(
+                            {
+                                'name': element['name'],
+                                'url': 'https://www.wildberries.ru' + element['url'],
+                                'shard': element['shard'],
+                                'query': element['query'],
+                            }
+                        )
+                    except KeyError:
+                        self.subcategory_info.append(
+                            {
+                                'name': element['name'],
+                                'url': 'https://www.wildberries.ru' + element['url'],
+                            }
+                        )
                 else:
-                    self.urls.append(element['url'])
+                    self.subcategory_info.append(
+                        {
+                            'name': element['name'],
+                            'url': element['url'],
+                        }
+                    )
