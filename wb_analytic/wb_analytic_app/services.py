@@ -77,7 +77,7 @@ def collect_all_urls():
     Parse a json file with categories
     :return: A list of unique subcategories subcategory_info
     """
-    with open(f'{os.getcwd()}/static/wb_analytic_app/categories_info.json', 'r', encoding='utf-8') as file:
+    with open(f'{os.getcwd()}/wb_analytic_app/static/wb_analytic_app/categories_info.json', 'r', encoding='utf-8') as file:
         data_json = json.load(file)
 
     all_urls = []
@@ -135,6 +135,6 @@ def number_of_products_links(subcategories_info):
         subcategory_name = subcategory['name']
         urls_list.append({subcategory_name: url})
 
-    print(urls_list)
+    # print(urls_list)
     # print(len(urls_list))
     return urls_list
