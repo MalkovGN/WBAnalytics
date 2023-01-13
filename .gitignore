@@ -146,7 +146,6 @@ test_orders_reviews_update.py
 parse_logic.drawio
 json_parser.py
 #.gitignore
-main.py
-
+wb_analytic/testing_functions.py
 tests/
 wb_analytic/wb_analytic_app/management/
