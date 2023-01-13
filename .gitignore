@@ -109,7 +109,7 @@ celerybeat.pid
 .env
 .venv
 env/
-venv/
+../venv/
 ENV/
 env.bak/
 venv.bak/
@@ -144,5 +144,9 @@ test_parser.py
 check_proxy.py
 test_orders_reviews_update.py
 parse_logic.drawio
+json_parser.py
+#.gitignore
+main.py
 
 tests/
+wb_analytic/wb_analytic_app/management/
