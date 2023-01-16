@@ -1,5 +1,8 @@
 import json
 import os
+import random
+import time
+import requests
 
 
 class JsonParser:
@@ -138,3 +141,19 @@ def number_of_products_links(subcategories_info):
     # print(urls_list)
     # print(len(urls_list))
     return urls_list
+
+def get_categories_without_shard(subcategories_info):
+    """
+    :param subcategories_info: JSON with all subcategories
+    :return: The list with subcategories which has not
+    shard and query params
+    """
+    categories_without_shard = []
+
+    for subcategory in subcategories_info:
+        if 'shard' not in subcategory.keys():
+            categories_without_shard.append(subcategory)
+
+    # print(categories_without_shard)
+    # print(len(categories_without_shard))
+    return categories_without_shard
