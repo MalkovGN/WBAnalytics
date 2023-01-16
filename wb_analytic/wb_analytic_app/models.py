@@ -7,3 +7,25 @@ class ProductsNumberUrlsModel(models.Model):
 
     def __str__(self):
         return self.category
+
+
+class ProductsInCategory(models.Model):
+    category = models.CharField(max_length=128)
+    counter = models.IntegerField()
+
+    class Meta:
+        verbose_name_plural = 'Products in categories'
+
+    def __str__(self):
+        return self.category
+
+
+class ProductsNotSaved(models.Model):
+    category = models.CharField(max_length=128)
+    url = models.TextField()
+
+    class Meta:
+        verbose_name_plural = 'Products not saved'
+
+    def __str__(self):
+        return self.category
