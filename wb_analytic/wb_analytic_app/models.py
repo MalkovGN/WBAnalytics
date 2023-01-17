@@ -14,7 +14,7 @@ class ProductsInCategory(models.Model):
     counter = models.IntegerField()
 
     class Meta:
-        verbose_name_plural = 'Products in categories'
+        verbose_name_plural = 'Number of products in categories'
 
     def __str__(self):
         return self.category
@@ -25,7 +25,7 @@ class ProductsNotSaved(models.Model):
     url = models.TextField()
 
     class Meta:
-        verbose_name_plural = 'Products not saved'
+        verbose_name_plural = 'Number of products urls not saved'
 
     def __str__(self):
         return self.category
