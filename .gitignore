@@ -149,3 +149,4 @@ json_parser.py
 wb_analytic/testing_functions.py
 tests/
 wb_analytic/wb_analytic_app/management/
+wb_analytic/data.json
