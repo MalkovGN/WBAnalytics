@@ -29,3 +29,15 @@ class ProductsNotSaved(models.Model):
 
     def __str__(self):
         return self.category
+
+
+class CategoryPageInfo(models.Model):
+    name = models.CharField(max_length=128)
+    wb_url = models.TextField()
+    first_page_products_url = models.TextField()
+
+    class Meta:
+        verbose_name_plural = 'Category page infos'
+
+    def __str__(self):
+        return self.name
