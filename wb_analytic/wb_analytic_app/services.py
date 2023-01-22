@@ -1,8 +1,5 @@
 import json
 import os
-import random
-import time
-import requests
 
 
 class JsonParser:
@@ -141,6 +138,7 @@ def number_of_products_links(subcategories_info):
     # print(urls_list)
     # print(len(urls_list))
     return urls_list
+
 
 def get_categories_without_shard(subcategories_info):
     """

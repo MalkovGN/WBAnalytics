@@ -37,7 +37,35 @@ class CategoryPageInfo(models.Model):
     first_page_products_url = models.TextField()
 
     class Meta:
-        verbose_name_plural = 'Category page infos'
+        verbose_name_plural = 'All category page infos'
+
+    def __str__(self):
+        return self.name
+
+
+class CategoriesNotSaved(models.Model):
+    name = models.CharField(max_length=128)
+    wb_url = models.TextField()
+    first_page_products_url = models.TextField()
+
+    class Meta:
+        verbose_name_plural = 'Categories not saved'
+
+    def __str__(self):
+        return self.name
+
+
+class ProductInfo(models.Model):
+    product_id = models.IntegerField()
+    name = models.CharField(max_length=255)
+    feedbacks = models.IntegerField()
+    sale_price = models.IntegerField()
+    price = models.IntegerField()
+    sold_number = models.IntegerField(null=True, blank=True)
+    category = models.ForeignKey(CategoryPageInfo, on_delete=models.CASCADE)
+
+    class Meta:
+        verbose_name_plural = 'Products info'
 
     def __str__(self):
         return self.name

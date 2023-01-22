@@ -139,14 +139,9 @@ dmypy.json
 cython_debug/
 
 .idea
-categories_info.json
-test_parser.py
-check_proxy.py
-test_orders_reviews_update.py
-parse_logic.drawio
-json_parser.py
+
 #.gitignore
-wb_analytic/testing_functions.py
+
 tests/
-wb_analytic/wb_analytic_app/management/
+
 wb_analytic/data.json
