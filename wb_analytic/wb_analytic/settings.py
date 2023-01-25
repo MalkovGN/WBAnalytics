@@ -87,9 +87,9 @@ DATA_UPLOAD_MAX_NUMBER_FIELDS = 8200
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'WB_Analytics',
-        'USER': 'postgres',
-        'PASSWORD': 'accesspassword',
+        'NAME': 'wb_db',
+        'USER': 'admin_new_1912',
+        'PASSWORD': 'MopeDIStanr',
         'HOST': 'localhost',
         'PORT': '5432',
     }
