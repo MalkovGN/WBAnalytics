@@ -15,7 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from wb_analytic_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.home, name='home_page'),
+    path('start_page/', views.current_user, name='current_user'),
+
+    #Auth
+    path('login/', views.login_user, name='login_user'),
 ]
