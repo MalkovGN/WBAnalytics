@@ -27,7 +27,7 @@ def collecting_sold_numbers():
             response = requests.get(url=url, proxies=proxy)
             qnt = response.json()[0]['qnt']
             # product_id = product.pk
-            ProductInfo.objects.filter(product_id=product.pk).update(
+            ProductInfo.objects.filter(pk=product.pk).update(
                 sold_number=qnt,
             )
             # product_amount = ProductInfo.objects.filter(p
