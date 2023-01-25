@@ -21,14 +21,19 @@ def collecting_sold_numbers():
         proxy = random.choice(proxies)
         time.sleep(random.choice(times_sleeps))
         url = f'https://product-order-qnt.wildberries.ru/by-nm/?nm={vendor_code}'
+        print(url)
 
         try:
             response = requests.get(url=url, proxies=proxy)
             qnt = response.json()[0]['qnt']
-            product_amount = ProductInfo(
+            # product_id = product.pk
+            ProductInfo.objects.filter(product_id=product.pk).update(
                 sold_number=qnt,
             )
-            product_amount.save()
+            # product_amount = ProductInfo.objects.filter(p
+            #     sold_number=qnt,
+            # )
+            # # product_amount.save()
         except Exception:
             product_amount_not_saved = AmountProductsNotSaved(
                 product_id=product.product_id,
