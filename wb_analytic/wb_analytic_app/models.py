@@ -70,3 +70,15 @@ class ProductInfo(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class AmountProductsNotSaved(models.Model):
+    product_id = models.IntegerField()
+    name = models.CharField(max_length=255)
+    category = models.ForeignKey(CategoryPageInfo, on_delete=models.CASCADE)
+
+    class Meta:
+        verbose_name_plural = 'Amount sold products not saved'
+
+    def __str__(self):
+        return self.name
