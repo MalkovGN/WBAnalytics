@@ -63,7 +63,7 @@ class ProductInfo(models.Model):
     price = models.IntegerField()
     sold_number = models.IntegerField(null=True, blank=True)
     category = models.ForeignKey(CategoryPageInfo, on_delete=models.CASCADE)
-    save_date = models.DateField(auto_now_add=True, null=True, blank=True)
+    save_date = models.DateField(null=True, blank=True)
 
     class Meta:
         verbose_name_plural = 'Products info'
