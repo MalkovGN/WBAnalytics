@@ -9,5 +9,12 @@
         <button type="submit">Start parsing</button>
         {% csrf_token %}
     </form>
+
+    {% for o in  obj %}
+        {{ o.name }}
+        {{ o.product_id }}
+        <br>
+    {% endfor %}
+
 </body>
 </html>

@@ -4,6 +4,7 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login, logout, authenticate
 
 from .services import collect_page_info, collect_product_info
+from .models import ProductInfo
 
 
 def home(request):
@@ -54,3 +55,8 @@ def current_user(request):
 
     # return render(request, 'wb_tracker_app/currentuser.html', {'cards': cards})
 
+
+def check_null_objects(request):
+    null_objects = ProductInfo.objects.filter(sold_number__isnull=True)
+    if request.method == 'GET':
+        return render(request, 'wb_analytic_app/current_user.html', {'obj': null_objects})
