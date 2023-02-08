@@ -4,7 +4,7 @@ import requests
 import random
 import time
 
-from wb_analytic_app.models import CategoryPageInfo, CategoriesNotSaved, ProductInfo
+from wb_analytic_app.models import CategoryPageInfo, CategoriesNotSaved, ProductInfo, AmountProductsNotSaved
 from wb_analytic_app.file import proxies, times_sleeps
 
 
@@ -232,3 +232,28 @@ def collect_product_info():
                 first_page_products_url=category.first_page_products_url,
             )
             not_saved_category.save()
+
+
+def retry_saving_sold_numbers():
+    """
+    Sending requests again
+    in products, which weren't saved
+    """
+    products_not_saved = AmountProductsNotSaved.objects.all()
+
+    for product in products_not_saved:
+        vendor_code = product.product_id
+        url = f'https://product-order-qnt.wildberries.ru/by-nm/?nm={vendor_code}'
+        proxy = random.choice(proxies)
+        time.sleep(random.choice(times_sleeps))
+
+        try:
+            response = requests.get(url=url, proxies=proxy)
+            qnt = response.json()[0]['qnt']
+            ProductInfo.objects.filter(pk=product.pk).update(
+                sold_number=qnt,
+            )
+            AmountProductsNotSaved.objects.filter(pk=product.pk).delete()
+            print(f'Product {product.name} saved!')
+        except Exception:
+            print(f'Product {product.name} with vendor code {product.product_id} didnt save')
