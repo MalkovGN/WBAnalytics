@@ -239,7 +239,7 @@ def retry_saving_sold_numbers():
     Sending requests again
     in products, which weren't saved
     """
-    products_not_saved = AmountProductsNotSaved.objects.all()
+    products_not_saved = ProductInfo.objects.filter(sold_number__isnull=True)
 
     for product in products_not_saved:
         vendor_code = product.product_id
