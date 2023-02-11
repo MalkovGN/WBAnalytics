@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'wb_analytic_app',
+    'services',
 ]
 
 MIDDLEWARE = [
