@@ -1,18 +1,21 @@
 from django.contrib import admin
 
-from .models import ProductsNumberUrlsModel, ProductsInCategory, ProductsNotSaved, CategoryPageInfo, ProductInfo, CategoriesNotSaved, AmountProductsNotSaved
+from . import models
 
+admin.site.register(models.ProductsNumberUrlsModel)
 
-admin.site.register(ProductsNumberUrlsModel)
+admin.site.register(models.ProductsInCategory)
 
-admin.site.register(ProductsInCategory)
+admin.site.register(models.ProductsNotSaved)
 
-admin.site.register(ProductsNotSaved)
+admin.site.register(models.CategoryPageInfo)
 
-admin.site.register(CategoryPageInfo)
+admin.site.register(models.ProductInfo)
 
-admin.site.register(ProductInfo)
+admin.site.register(models.CategoriesNotSaved)
 
-admin.site.register(CategoriesNotSaved)
+admin.site.register(models.AmountProductsNotSaved)
 
-admin.site.register(AmountProductsNotSaved)
+admin.site.register(models.AnalyticCategoryModel)
+
+admin.site.register(models.CategoryNameModel)
