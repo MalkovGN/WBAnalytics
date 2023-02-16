@@ -4,7 +4,7 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login, logout, authenticate
 
 from .services import collect_page_info, collect_product_info
-from .models import ProductInfo
+from .models import ProductInfo, CategoryPageInfo
 
 
 def home(request):
@@ -46,7 +46,11 @@ def current_user(request):
     The first page after
     registration/authentication
     """
-    categories = ProductInfo.objects.order_by().values('category').distinct()
+    categories = CategoryPageInfo.objects.order_by().values_list('category_id', flat=True).distinct()
+
+    # for category in categories:
+        # sold_number = Pr
+    # categories = ProductInfo.objects.order_by().values_list('category__first_page_products_url', flat=True).distinct()
     len_categories = len(categories)
     if request.method == 'GET':
         return render(request, 'wb_analytic_app/current_user.html',
@@ -73,3 +77,5 @@ def current_user(request):
     #                       'len': len_categories,
     #                   }
     #                   )
+
+
