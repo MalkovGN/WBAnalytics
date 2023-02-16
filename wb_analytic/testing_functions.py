@@ -1,10 +1,11 @@
 import os
 import random
 import time
-import pywhatkit
+import datetime
 import requests
 import json
-from json_parser import JsonParser
+# from json_parser import JsonParser
+from services.json_parser import JsonParser
 from check_proxy import LOGIN, PASSWORD
 
 # from wb_analytic_app.models import ProductsNumberUrlsModel
@@ -165,9 +166,10 @@ def parse_category_json():
 
 
 if __name__ == '__main__':
-    url = 'https://product-order-qnt.wildberries.ru/by-nm/?nm=13988939'
-    response = requests.get(url=url, proxies=proxies)
-    print(response.json())
-    pass
-
+    # url = 'https://product-order-qnt.wildberries.ru/by-nm/?nm=13988939'
+    # response = requests.get(url=url, proxies=proxies)
+    # print(response.json())
+    # pass
+    print(datetime.date.today())
+    print(collect_all_urls())
 
