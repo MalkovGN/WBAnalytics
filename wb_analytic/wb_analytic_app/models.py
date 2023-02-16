@@ -31,10 +31,24 @@ class ProductsNotSaved(models.Model):
         return self.category
 
 
+class CategoryNameModel(models.Model):
+    name = models.CharField(max_length=128)
+    category_id = models.IntegerField()
+    shard = models.TextField(null=True, blank=True)
+    query = models.TextField(null=True, blank=True)
+    wb_url = models.TextField(null=True, blank=True)
+
+    class Meta:
+        verbose_name_plural = 'All categories names'
+
+    def __str__(self):
+        return self.name
+
+
 class CategoryPageInfo(models.Model):
     name = models.CharField(max_length=128)
-    wb_url = models.TextField()
     first_page_products_url = models.TextField()
+    category_id = models.ForeignKey(CategoryNameModel, on_delete=models.SET_NULL, null=True)
 
     class Meta:
         verbose_name_plural = 'All category page infos'
@@ -45,8 +59,8 @@ class CategoryPageInfo(models.Model):
 
 class CategoriesNotSaved(models.Model):
     name = models.CharField(max_length=128)
-    wb_url = models.TextField()
     first_page_products_url = models.TextField()
+    category_id = models.ForeignKey(CategoryPageInfo, on_delete=models.SET_NULL, null=True)
 
     class Meta:
         verbose_name_plural = 'Categories not saved'
@@ -62,11 +76,12 @@ class ProductInfo(models.Model):
     sale_price = models.IntegerField()
     price = models.IntegerField()
     sold_number = models.IntegerField(null=True, blank=True)
-    category = models.ForeignKey(CategoryPageInfo, on_delete=models.CASCADE)
+    category_id = models.ForeignKey(CategoryPageInfo, on_delete=models.SET_NULL, null=True)
     save_date = models.DateField(null=True, blank=True)
 
     class Meta:
         verbose_name_plural = 'Products info'
+        ordering = ('category_id',)
 
     def __str__(self):
         return self.name
@@ -82,3 +97,13 @@ class AmountProductsNotSaved(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class AnalyticCategoryModel(models.Model):
+    category_name = models.CharField(max_length=128)
+    all_sold_products = models.IntegerField()
+    all_feedbacks = models.IntegerField()
+    date = models.DateField()
+
+    def __str__(self):
+        return self.category_name
