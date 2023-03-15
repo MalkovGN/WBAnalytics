@@ -129,7 +129,7 @@
                 "parent": 306,
                 "name": "Халаты",
                 "url": "/catalog/zhenshchinam/odezhda-dlya-doma/halaty",
-                "shard": "housewear_root",
+                "shard": "women_bathrobes",
                 "query": "cat=128996"
             },
             {
@@ -567,7 +567,7 @@
                 "name": "Одежда для дома",
                 "seo": "Женская домашняя одежда",
                 "url": "/catalog/zhenshchinam/odezhda/odezhda-dlya-doma",
-                "shard": "housewear_root",
+                "shard": "blackhole",
                 "query": "cat=8135",
                 "childs": [
                     {
@@ -575,7 +575,7 @@
                         "parent": 8135,
                         "name": "Брюки и шорты",
                         "url": "/catalog/zhenshchinam/odezhda-dlya-doma/bryuki-i-shorty",
-                        "shard": "housewear_root",
+                        "shard": "women_homewear1",
                         "query": "cat=128987"
                     },
                     {
@@ -583,7 +583,7 @@
                         "parent": 8135,
                         "name": "Блузки и туники",
                         "url": "/catalog/zhenshchinam/odezhda-dlya-doma/bluzki-i-tuniki",
-                        "shard": "housewear_root",
+                        "shard": "women_homewear1",
                         "query": "cat=128988"
                     },
                     {
@@ -591,7 +591,7 @@
                         "parent": 8135,
                         "name": "Джемперы и кардиганы",
                         "url": "/catalog/zhenshchinam/odezhda-dlya-doma/dzhempery-i-kardigany",
-                        "shard": "housewear_root",
+                        "shard": "women_homewear1",
                         "query": "cat=128989"
                     },
                     {
@@ -599,7 +599,7 @@
                         "parent": 8135,
                         "name": "Жакеты и жилеты",
                         "url": "/catalog/zhenshchinam/odezhda-dlya-doma/zhakety-i-zhilety",
-                        "shard": "housewear_root",
+                        "shard": "women_homewear1",
                         "query": "cat=128990"
                     },
                     {
@@ -607,7 +607,7 @@
                         "parent": 8135,
                         "name": "Костюмы и комбинезоны",
                         "url": "/catalog/zhenshchinam/odezhda-dlya-doma/kostyumy-i-kombinezony",
-                        "shard": "housewear_root",
+                        "shard": "women_homewear1",
                         "query": "cat=128991"
                     },
                     {
@@ -615,7 +615,7 @@
                         "parent": 8135,
                         "name": "Пижамы и сорочки",
                         "url": "/catalog/zhenshchinam/odezhda-dlya-doma/pizhamy-i-sorochki",
-                        "shard": "housewear_root",
+                        "shard": "women_homewear1",
                         "query": "cat=128992"
                     },
                     {
@@ -623,7 +623,7 @@
                         "parent": 8135,
                         "name": "Платья, сарафаны и юбки",
                         "url": "/catalog/zhenshchinam/odezhda-dlya-doma/platya-sarafany-i-yubki",
-                        "shard": "housewear_root",
+                        "shard": "women_homewear2",
                         "query": "cat=128993"
                     },
                     {
@@ -631,7 +631,7 @@
                         "parent": 8135,
                         "name": "Толстовки и лонгсливы",
                         "url": "/catalog/zhenshchinam/odezhda-dlya-doma/tolstovki-i-longslivy",
-                        "shard": "housewear_root",
+                        "shard": "women_homewear2",
                         "query": "cat=128994"
                     },
                     {
@@ -639,10 +639,11 @@
                         "parent": 8135,
                         "name": "Топы и футболки",
                         "url": "/catalog/zhenshchinam/odezhda-dlya-doma/topy-i-futbolki",
-                        "shard": "housewear_root",
+                        "shard": "women_homewear2",
                         "query": "cat=128995"
                     }
-                ]
+                ],
+                "isDenyLink": true
             },
             {
                 "id": 10460,
@@ -1096,7 +1097,7 @@
                 "name": "Детская",
                 "seo": "Детская обувь",
                 "url": "/catalog/obuv/detskaya",
-                "shard": "children",
+                "shard": "children_shoes",
                 "query": "cat=128330",
                 "childs": [
                     {
@@ -1105,7 +1106,7 @@
                         "name": "Для девочек",
                         "seo": "Обувь для девочек",
                         "url": "/catalog/obuv/detskaya/dlya-devochek",
-                        "shard": "children",
+                        "shard": "children_shoes",
                         "query": "cat=631"
                     },
                     {
@@ -1114,7 +1115,7 @@
                         "name": "Для мальчиков",
                         "seo": "Обувь для мальчиков",
                         "url": "/catalog/obuv/detskaya/dlya-malchikov",
-                        "shard": "children",
+                        "shard": "children_shoes",
                         "query": "cat=645"
                     }
                 ]
@@ -1125,7 +1126,7 @@
                 "name": "Для новорожденных",
                 "seo": "Обувь для новорожденных",
                 "url": "/catalog/obuv/dlya-novorozhdennyh",
-                "shard": "children",
+                "shard": "children_shoes",
                 "query": "cat=8225&wbsize=56114;56115;56116;66482;56117;56118;56119;56120;63696;56121;56122;56123;2;1286;293;313;333;353;373;1970;2261;2281;2301;3938;4249;4269;4289;5906;7190;6237;6257;6277;6297;7874;8225;8245;8265;9842;10213;10233;11809;13093;12200;13778;56111;56113"
             },
             {
@@ -1544,6 +1545,14 @@
                         "query": "cat=8328"
                     },
                     {
+                        "id": 130665,
+                        "parent": 146,
+                        "name": "Халаты",
+                        "url": "/catalog/detyam/dlya-devochek/kxalaty",
+                        "shard": "children_girls3",
+                        "query": "cat=130665"
+                    },
+                    {
                         "id": 8883,
                         "parent": 146,
                         "name": "Худи",
@@ -1846,7 +1855,7 @@
                 "name": "Для новорожденных",
                 "seo": "Одежда для новорожденных",
                 "url": "/catalog/detyam/odezhda/dlya-novorozhdennyh",
-                "shard": "babies",
+                "shard": "babies1",
                 "query": "cat=199",
                 "childs": [
                     {
@@ -1855,7 +1864,7 @@
                         "name": "Аксессуары",
                         "seo": "Аксессуары для новорожденных",
                         "url": "/catalog/detyam/dlya-novorozhdennyh/aksessuary",
-                        "shard": "babies",
+                        "shard": "babies1",
                         "query": "cat=61310"
                     },
                     {
@@ -1864,7 +1873,7 @@
                         "name": "Белье",
                         "seo": "Белье для новорожденных",
                         "url": "/catalog/detyam/odezhda/dlya-novorozhdennyh/bele",
-                        "shard": "babies",
+                        "shard": "babies1",
                         "query": "cat=200"
                     },
                     {
@@ -1873,7 +1882,7 @@
                         "name": "Боди и ползунки",
                         "seo": "Боди и ползунки для новорожденных",
                         "url": "/catalog/detyam/odezhda/dlya-novorozhdennyh/bodi-polzunki",
-                        "shard": "babies",
+                        "shard": "babies1",
                         "query": "cat=201"
                     },
                     {
@@ -1882,7 +1891,7 @@
                         "name": "Брюки и шорты",
                         "seo": "Брюки и шорты для новорожденных",
                         "url": "/catalog/detyam/odezhda/dlya-novorozhdennyh/bryuki-shorty",
-                        "shard": "babies",
+                        "shard": "babies1",
                         "query": "cat=202"
                     },
                     {
@@ -1890,7 +1899,7 @@
                         "parent": 199,
                         "name": "Верхняя одежда",
                         "url": "/catalog/detyam/dlya-novorozhdennyh/odezhda/verhnyaya-odezhda",
-                        "shard": "babies",
+                        "shard": "babies1",
                         "query": "cat=63081"
                     },
                     {
@@ -1899,7 +1908,7 @@
                         "name": "Жакеты и болеро",
                         "seo": "Жакеты и болеро для новорожденных",
                         "url": "/catalog/detyam/odezhda/dlya-novorozhdennyh/zhakety-bolero",
-                        "shard": "babies",
+                        "shard": "babies1",
                         "query": "cat=212"
                     },
                     {
@@ -1908,7 +1917,7 @@
                         "name": "Комбинезоны и полукомбинезоны",
                         "seo": "Комбинезоны и полукомбинезоны для новорожденных",
                         "url": "/catalog/detyam/odezhda/dlya-novorozhdennyh/kombinezony",
-                        "shard": "babies",
+                        "shard": "babies1",
                         "query": "cat=204"
                     },
                     {
@@ -1917,7 +1926,7 @@
                         "name": "Конверты и спальные мешки",
                         "seo": "Конверты для новорожденных",
                         "url": "/catalog/detyam/odezhda/dlya-novorozhdennyh/konverty",
-                        "shard": "babies",
+                        "shard": "babies1",
                         "query": "cat=209"
                     },
                     {
@@ -1926,7 +1935,7 @@
                         "name": "Костюмы и комплекты",
                         "seo": "Костюмы и комплекты для новорожденных",
                         "url": "/catalog/detyam/odezhda/dlya-novorozhdennyh/kostyumy",
-                        "shard": "babies",
+                        "shard": "babies1",
                         "query": "cat=208"
                     },
                     {
@@ -1935,7 +1944,7 @@
                         "name": "Кофточки и джемперы",
                         "seo": "Кофточки и джемперы для новорожденных",
                         "url": "/catalog/detyam/odezhda/dlya-novorozhdennyh/koftochki-dzhempery",
-                        "shard": "babies",
+                        "shard": "babies1",
                         "query": "cat=211"
                     },
                     {
@@ -1944,15 +1953,23 @@
                         "name": "Одежда для дома",
                         "seo": "Домашняя одежда для новорожденных",
                         "url": "/catalog/detyam/odezhda/dlya-novorozhdennyh/odezhda-dlya-doma",
-                        "shard": "babies",
+                        "shard": "babies1",
                         "query": "cat=214"
+                    },
+                    {
+                        "id": 130690,
+                        "parent": 199,
+                        "name": "Одежда для крещения",
+                        "url": "/catalog/detyam/odezhda/dlya-novorozhdennyh/odezhda-dlya-kreshcheniya",
+                        "shard": "children_things1",
+                        "query": "cat=130690"
                     },
                     {
                         "id": 128533,
                         "parent": 199,
                         "name": "Одежда на выписку",
                         "url": "/catalog/detyam/dlya-novorozhdennyh/odezhda-na-vypisku",
-                        "shard": "babies",
+                        "shard": "babies1",
                         "query": "cat=128533"
                     },
                     {
@@ -1960,7 +1977,7 @@
                         "parent": 199,
                         "name": "Пинетки",
                         "url": "/catalog/detyam/dlya-novorozhdennyh/pinetki",
-                        "shard": "babies",
+                        "shard": "babies1",
                         "query": "cat=128534"
                     },
                     {
@@ -1969,7 +1986,7 @@
                         "name": "Платья и юбки",
                         "seo": "Платья и юбки для новорожденных",
                         "url": "/catalog/detyam/odezhda/dlya-novorozhdennyh/platya-yubki",
-                        "shard": "babies",
+                        "shard": "babies1",
                         "query": "cat=216"
                     },
                     {
@@ -1978,8 +1995,8 @@
                         "name": "Распашонки",
                         "seo": "Распашонки для новорожденных",
                         "url": "/catalog/detyam/odezhda/dlya-novorozhdennyh/raspashonki",
-                        "shard": "babies",
-                        "query": "subject=277"
+                        "shard": "babies1",
+                        "query": "cat=8558"
                     },
                     {
                         "id": 218,
@@ -1987,8 +2004,16 @@
                         "name": "Футболки и топы",
                         "seo": "Футболки и топы для новорожденных",
                         "url": "/catalog/detyam/odezhda/dlya-novorozhdennyh/futbolki-topy",
-                        "shard": "babies",
+                        "shard": "babies1",
                         "query": "cat=218"
+                    },
+                    {
+                        "id": 130666,
+                        "parent": 199,
+                        "name": "Халаты и пижамы",
+                        "url": "/catalog/detyam/odezhda/dlya-novorozhdennyh/kxalaty-i-pizhamy",
+                        "shard": "babies1",
+                        "query": "cat=130666"
                     }
                 ]
             },
@@ -4543,7 +4568,7 @@
                                 "query": "cat=61681"
                             },
                             {
-                                "id": 17164,
+                                "id": 130695,
                                 "parent": 8054,
                                 "name": "Рисование и лепка",
                                 "seo": "Товары для рисования и лепки",
@@ -7004,7 +7029,7 @@
                         "parent": 9455,
                         "name": "Планшеты",
                         "url": "/catalog/elektronika/planshety",
-                        "shard": "electronic3",
+                        "shard": "electronic22",
                         "query": "subject=517",
                         "childs": [
                             {
@@ -7013,7 +7038,7 @@
                                 "name": "Apple",
                                 "seo": "Планшеты Apple",
                                 "url": "/catalog/elektronika/planshety/apple",
-                                "shard": "electronic3",
+                                "shard": "electronic22",
                                 "query": "cat=9478"
                             },
                             {
@@ -7022,7 +7047,7 @@
                                 "name": "Samsung",
                                 "seo": "Планшеты Samsung",
                                 "url": "/catalog/elektronika/planshety/samsung",
-                                "shard": "electronic3",
+                                "shard": "electronic22",
                                 "query": "cat=9479"
                             },
                             {
@@ -7030,7 +7055,7 @@
                                 "parent": 9477,
                                 "name": "Планшеты на Android",
                                 "url": "/catalog/elektronika/planshety/android",
-                                "shard": "electronic3",
+                                "shard": "electronic22",
                                 "query": "cat=9480"
                             },
                             {
@@ -7038,7 +7063,7 @@
                                 "parent": 9477,
                                 "name": "Аксессуары для планшетов",
                                 "url": "/catalog/elektronika/smartfony-i-telefony/planshety/aksessuary-dlya-planshetov",
-                                "shard": "electronic3",
+                                "shard": "electronic22",
                                 "query": "cat=63080"
                             }
                         ]
@@ -7048,7 +7073,7 @@
                         "parent": 9455,
                         "name": "Смартфоны",
                         "url": "/catalog/elektronika/smartfony-i-telefony/vse-smartfony",
-                        "shard": "electronic3",
+                        "shard": "electronic22",
                         "query": "subject=515"
                     },
                     {
@@ -7057,17 +7082,25 @@
                         "name": "Стационарные телефоны",
                         "seo": "Телефоны стационарные",
                         "url": "/catalog/elektronika/tehnika-dlya-doma/telefony-statsionarnye",
-                        "shard": "electronic3",
+                        "shard": "electronic22",
                         "query": "subject=2376"
                     },
                     {
                         "id": 9465,
                         "parent": 9455,
-                        "name": "Стекла и пленки",
-                        "seo": "Стекла и пленки для смартфона",
+                        "name": "Стекла защитные",
+                        "seo": "Стекла для смартфона",
                         "url": "/catalog/elektronika/smartfony-i-telefony/stekla-i-plenki",
-                        "shard": "electronic3",
+                        "shard": "electronic22",
                         "query": "cat=9465"
+                    },
+                    {
+                        "id": 130692,
+                        "parent": 9455,
+                        "name": "Пленки защитные",
+                        "url": "/catalog/elektronika/smartfony-i-telefony/plenki-zashchitnye",
+                        "shard": "electronic21",
+                        "query": "subject=453"
                     },
                     {
                         "id": 9927,
@@ -7075,7 +7108,7 @@
                         "name": "Стилусы",
                         "seo": "Стилусы для смартфона",
                         "url": "/catalog/elektronika/smartfony-i-telefony/stilusy",
-                        "shard": "electronic3",
+                        "shard": "electronic22",
                         "query": "subject=2833"
                     },
                     {
@@ -7178,11 +7211,19 @@
                         "isDenyLink": true
                     },
                     {
+                        "id": 130693,
+                        "parent": 9455,
+                        "name": "Шнурки и кольца",
+                        "url": "/catalog/elektronika/smartfony-i-telefony/shnurki-i-koltsa",
+                        "shard": "electronic21",
+                        "query": "cat=130693"
+                    },
+                    {
                         "id": 59065,
                         "parent": 9455,
                         "name": "Flash-накопители",
                         "url": "/catalog/elektronika/smartfony-i-telefony/flash-nakopiteli",
-                        "shard": "electronic3",
+                        "shard": "electronic22",
                         "query": "cat=59065"
                     }
                 ],
@@ -7778,10 +7819,10 @@
                     {
                         "id": 129319,
                         "parent": 129026,
-                        "name": "Наполнители для кресла-мешка",
+                        "name": "Наполнители и чехлы для кресел-мешков",
                         "url": "/catalog/mebel/beskarkasnaya-mebel/napolniteli-dlya-kresla-meshka",
                         "shard": "rooms",
-                        "query": "subject=5840"
+                        "query": "cat=129319"
                     },
                     {
                         "id": 129318,
@@ -8022,6 +8063,14 @@
                         "url": "/catalog/mebel/mebel-dlya-gostinoy/polki",
                         "shard": "rooms",
                         "query": "cat=129050"
+                    },
+                    {
+                        "id": 130237,
+                        "parent": 129029,
+                        "name": "Стенки",
+                        "url": "/catalog/dom/mebel/mebel-dlya-gostinoy/stenki",
+                        "shard": "rooms",
+                        "query": "subject=7592"
                     },
                     {
                         "id": 129051,
@@ -11531,8 +11580,16 @@
                 "parent": 784,
                 "name": "Спортивная обувь",
                 "url": "/catalog/sport/sportivnaya-obuv",
-                "shard": "sport8",
+                "shard": "sport18",
                 "query": "cat=998"
+            },
+            {
+                "id": 130664,
+                "parent": 784,
+                "name": "Товары для самообороны",
+                "url": "/catalog/sport/tovary-dlya-samooborony",
+                "shard": "sport18",
+                "query": "cat=130664"
             },
             {
                 "id": 60859,
@@ -11540,7 +11597,7 @@
                 "name": "Электроника",
                 "seo": "Электроника для спорта",
                 "url": "/catalog/sport/elektronika",
-                "shard": "sport8",
+                "shard": "sport18",
                 "query": "cat=60859"
             }
         ]
@@ -11648,6 +11705,14 @@
                         "url": "/catalog/avtotovary/zapchasti-na-legkovye-avtomobili/detali-salona",
                         "shard": "autoproduct12",
                         "query": "cat=128638"
+                    },
+                    {
+                        "id": 130667,
+                        "parent": 128627,
+                        "name": "Кузов",
+                        "url": "/catalog/avtotovary/zapchasti-na-legkovye-avtomobili/kuzov",
+                        "shard": "autoproduct4",
+                        "query": "cat=130667"
                     },
                     {
                         "id": 129100,
@@ -11853,7 +11918,7 @@
                         "name": "Моторное масло",
                         "url": "/catalog/avtotovary/masla-i-zhidkosti/motornye-masla",
                         "shard": "autoproduct13",
-                        "query": "cat=128641"
+                        "query": "subject=3906"
                     },
                     {
                         "id": 128642,
@@ -11861,7 +11926,7 @@
                         "name": "Трансмиссионное масло",
                         "url": "/catalog/avtotovary/masla-i-zhidkosti/transmissionnoe-maslo",
                         "shard": "autoproduct13",
-                        "query": "cat=128642"
+                        "query": "subject=3965"
                     },
                     {
                         "id": 128643,
@@ -11870,6 +11935,22 @@
                         "url": "/catalog/avtotovary/masla-i-zhidkosti/zhidkosti-ekspluatatsionnye",
                         "shard": "autoproduct13",
                         "query": "cat=128643"
+                    },
+                    {
+                        "id": 130705,
+                        "parent": 128640,
+                        "name": "Гидравлические жидкости и масла",
+                        "url": "/catalog/avtotovary/masla-i-zhidkosti/gidravlicheskie-zhidkosti-i-masla",
+                        "shard": "autoproduct13",
+                        "query": "cat=130705"
+                    },
+                    {
+                        "id": 130704,
+                        "parent": 128640,
+                        "name": "Тормозные жидкости",
+                        "url": "/catalog/avtotovary/masla-i-zhidkosti/tormoznye-zhidkosti",
+                        "shard": "autoproduct13",
+                        "query": "subject=8000"
                     }
                 ]
             },
@@ -11973,8 +12054,131 @@
                 "parent": 6994,
                 "name": "Аксессуары в салон и багажник",
                 "url": "/catalog/avtotovary/avtoaksessuary-i-dopolnitelnoe-oborudovanie/aksessuary-v-salon-i-bagazhnik",
-                "shard": "autoproduct8",
-                "query": "cat=128663"
+                "shard": "blackhole",
+                "query": "cat=128663",
+                "childs": [
+                    {
+                        "id": 130675,
+                        "parent": 128663,
+                        "name": "Аварийные принадлежности",
+                        "url": "/catalog/avtotovary/avtoaksessuary-i-dopolnitelnoe-oborudovanie/aksessuary-v-salon-i-bagazhnik/avariynye-prinadlezhnosti",
+                        "shard": "autoproduct16",
+                        "query": "cat=130675"
+                    },
+                    {
+                        "id": 130676,
+                        "parent": 128663,
+                        "name": "Автокресла и аксессуары",
+                        "url": "/catalog/avtotovary/avtoaksessuary-i-dopolnitelnoe-oborudovanie/aksessuary-v-salon-i-bagazhnik/avtokresla-i-aksessuary",
+                        "shard": "autoproduct16",
+                        "query": "cat=130676"
+                    },
+                    {
+                        "id": 130677,
+                        "parent": 128663,
+                        "name": "Автомобильные компрессоры",
+                        "url": "/catalog/avtotovary/avtoaksessuary-i-dopolnitelnoe-oborudovanie/aksessuary-v-salon-i-bagazhnik/avtomobilnye-kompressory",
+                        "shard": "autoproduct16",
+                        "query": "cat=130677"
+                    },
+                    {
+                        "id": 130678,
+                        "parent": 128663,
+                        "name": "Аксессуары для водителя",
+                        "url": "/catalog/avtotovary/avtoaksessuary-i-dopolnitelnoe-oborudovanie/aksessuary-v-salon-i-bagazhnik/aksessuary-dlya-voditelya",
+                        "shard": "autoproduct16",
+                        "query": "cat=130678"
+                    },
+                    {
+                        "id": 130679,
+                        "parent": 128663,
+                        "name": "Ароматизаторы",
+                        "url": "/catalog/avtotovary/avtoaksessuary-i-dopolnitelnoe-oborudovanie/aksessuary-v-salon-i-bagazhnik/aromatizatory",
+                        "shard": "autoproduct16",
+                        "query": "subject=1346"
+                    },
+                    {
+                        "id": 130680,
+                        "parent": 128663,
+                        "name": "Держатели",
+                        "url": "/catalog/avtotovary/avtoaksessuary-i-dopolnitelnoe-oborudovanie/aksessuary-v-salon-i-bagazhnik/derzhateli",
+                        "shard": "autoproduct16",
+                        "query": "subject=777"
+                    },
+                    {
+                        "id": 130681,
+                        "parent": 128663,
+                        "name": "Домкраты",
+                        "url": "/catalog/avtotovary/avtoaksessuary-i-dopolnitelnoe-oborudovanie/aksessuary-v-salon-i-bagazhnik/domkraty",
+                        "shard": "autoproduct16",
+                        "query": "subject=770"
+                    },
+                    {
+                        "id": 130682,
+                        "parent": 128663,
+                        "name": "Изоляционные материалы",
+                        "url": "/catalog/avtotovary/avtoaksessuary-i-dopolnitelnoe-oborudovanie/aksessuary-v-salon-i-bagazhnik/izolyatsionnye-materialy",
+                        "shard": "autoproduct16",
+                        "query": "cat=130682"
+                    },
+                    {
+                        "id": 130683,
+                        "parent": 128663,
+                        "name": "Канистры",
+                        "url": "/catalog/avtotovary/avtoaksessuary-i-dopolnitelnoe-oborudovanie/aksessuary-v-salon-i-bagazhnik/kanistry",
+                        "shard": "autoproduct16",
+                        "query": "subject=2098"
+                    },
+                    {
+                        "id": 130691,
+                        "parent": 128663,
+                        "name": "Наборы автомобилиста",
+                        "url": "/catalog/avtotovary/avtoaksessuary-i-dopolnitelnoe-oborudovanie/aksessuary-v-salon-i-bagazhnik/nabory-avtomobilista",
+                        "shard": "autoproduct16",
+                        "query": "subject=931"
+                    },
+                    {
+                        "id": 130684,
+                        "parent": 128663,
+                        "name": "Органайзеры и сумки",
+                        "url": "/catalog/avtotovary/avtoaksessuary-i-dopolnitelnoe-oborudovanie/aksessuary-v-salon-i-bagazhnik/organayzery-i-sumki",
+                        "shard": "autoproduct16",
+                        "query": "cat=130684"
+                    },
+                    {
+                        "id": 130685,
+                        "parent": 128663,
+                        "name": "Термокружки и подстаканники",
+                        "url": "/catalog/avtotovary/avtoaksessuary-i-dopolnitelnoe-oborudovanie/aksessuary-v-salon-i-bagazhnik/termokruzhki-i-podstakanniki",
+                        "shard": "autoproduct16",
+                        "query": "cat=130685"
+                    },
+                    {
+                        "id": 130686,
+                        "parent": 128663,
+                        "name": "Тюнинг и внутренний декор",
+                        "url": "/catalog/avtotovary/avtoaksessuary-i-dopolnitelnoe-oborudovanie/aksessuary-v-salon-i-bagazhnik/tyuning-i-vnutrenniy-dekor",
+                        "shard": "autoproduct16",
+                        "query": "cat=130686"
+                    },
+                    {
+                        "id": 130687,
+                        "parent": 128663,
+                        "name": "Уход за автомобилем",
+                        "url": "/catalog/avtotovary/avtoaksessuary-i-dopolnitelnoe-oborudovanie/aksessuary-v-salon-i-bagazhnik/ukxod-za-avtomobilem",
+                        "shard": "autoproduct16",
+                        "query": "cat=130687"
+                    },
+                    {
+                        "id": 130688,
+                        "parent": 128663,
+                        "name": "Чехлы и накидки",
+                        "url": "/catalog/avtotovary/avtoaksessuary-i-dopolnitelnoe-oborudovanie/aksessuary-v-salon-i-bagazhnik/chekxly-i-nakidki",
+                        "shard": "autoproduct17",
+                        "query": "cat=130688"
+                    }
+                ],
+                "isDenyLink": true
             },
             {
                 "id": 129174,
@@ -11997,7 +12201,7 @@
                 "parent": 6994,
                 "name": "Другие аксессуары и доп. оборудование",
                 "url": "/catalog/aksessuary/avtotovary/avtoaksessuary-i-dopolnitelnoe-oborudovanie",
-                "shard": "autoproduct2",
+                "shard": "blackhole",
                 "query": "cat=128662",
                 "childs": [
                     {
@@ -12048,7 +12252,8 @@
                         "shard": "autoproduct15",
                         "query": "cat=128671"
                     }
-                ]
+                ],
+                "isDenyLink": true
             },
             {
                 "id": 62554,
@@ -13990,7 +14195,7 @@
                         "parent": 16723,
                         "name": "Сверление, долбление, закручивание",
                         "url": "/catalog/dlya-remonta/instrumenty-i-osnastka/sverlenie-dolblenie-zakruchivanie",
-                        "shard": "repair6",
+                        "shard": "repair8",
                         "query": "cat=128961"
                     },
                     {
@@ -13998,7 +14203,7 @@
                         "parent": 16723,
                         "name": "Измерительные приборы",
                         "url": "/catalog/dlya-remonta/instrumenty-i-osnastka/izmeritelnye-pribory",
-                        "shard": "repair6",
+                        "shard": "repair8",
                         "query": "cat=128960"
                     },
                     {
@@ -14006,7 +14211,7 @@
                         "parent": 16723,
                         "name": "Лестницы и высотные конструкции",
                         "url": "/catalog/dlya-remonta/instrumenty-i-osnastka/lestnitsy-i-vysotnye-konstruktsii",
-                        "shard": "repair6",
+                        "shard": "repair8",
                         "query": "cat=128967"
                     },
                     {
@@ -14014,7 +14219,7 @@
                         "parent": 16723,
                         "name": "Оборудование",
                         "url": "/catalog/dlya-remonta/instrumenty-i-osnastka/oborudovanie",
-                        "shard": "repair6",
+                        "shard": "repair8",
                         "query": "cat=128968"
                     },
                     {
@@ -14022,7 +14227,7 @@
                         "parent": 16723,
                         "name": "Паяльно-термические инструменты",
                         "url": "/catalog/dlya-remonta/instrumenty-i-osnastka/payalno-termicheskie-instrumenty",
-                        "shard": "repair6",
+                        "shard": "repair8",
                         "query": "cat=128962"
                     },
                     {
@@ -14030,7 +14235,7 @@
                         "parent": 16723,
                         "name": "Хранение и переноска инструмента",
                         "url": "/catalog/dlya-remonta/instrumenty-i-osnastka/hranenie-i-perenoska-instrumenta",
-                        "shard": "repair6",
+                        "shard": "repair8",
                         "query": "cat=128969"
                     },
                     {
@@ -14038,7 +14243,7 @@
                         "parent": 16723,
                         "name": "Пильно-отрезные инструменты",
                         "url": "/catalog/dlya-remonta/instrumenty-i-osnastka/pilno-otreznye-instrumenty",
-                        "shard": "repair6",
+                        "shard": "repair8",
                         "query": "cat=128963"
                     },
                     {
@@ -14046,7 +14251,7 @@
                         "parent": 16723,
                         "name": "Шлифовальные инструменты",
                         "url": "/catalog/dlya-remonta/instrumenty-i-osnastka/shlifovalnye-instrumenty",
-                        "shard": "repair6",
+                        "shard": "repair8",
                         "query": "cat=128964"
                     },
                     {
@@ -14054,7 +14259,7 @@
                         "parent": 16723,
                         "name": "Средства индивидуальной защиты и экипировка",
                         "url": "/catalog/dlya-remonta/instrumenty-i-osnastka/sredstva-individualnoy-zashchity-i-ekipirovka",
-                        "shard": "repair6",
+                        "shard": "repair8",
                         "query": "cat=128965"
                     },
                     {
@@ -14062,7 +14267,7 @@
                         "parent": 16723,
                         "name": "Штукатурные инструменты",
                         "url": "/catalog/dlya-remonta/instrumenty-i-osnastka/shtukaturnye-instrumenty",
-                        "shard": "repair6",
+                        "shard": "repair8",
                         "query": "cat=128966"
                     }
                 ],
@@ -15832,6 +16037,14 @@
                 "query": "cat=10331"
             },
             {
+                "id": 130696,
+                "parent": 10326,
+                "name": "Капли, спреи и растворы",
+                "url": "/catalog/dom-i-dacha/zdorove/kapli-sprei-i-rastvory",
+                "shard": "shealth4",
+                "query": "cat=130696"
+            },
+            {
                 "id": 10328,
                 "parent": 10326,
                 "name": "Контрацептивы и лубриканты",
@@ -15945,6 +16158,14 @@
                 ]
             },
             {
+                "id": 130697,
+                "parent": 10326,
+                "name": "Противопростудные препараты",
+                "url": "/catalog/dom-i-dacha/zdorove/protivoprostudnye-preparaty",
+                "shard": "shealth2",
+                "query": "subject=3041"
+            },
+            {
                 "id": 61809,
                 "parent": 10326,
                 "name": "Реабилитация",
@@ -16008,6 +16229,15 @@
                 "url": "/catalog/knigi-i-kantstovary/kantstovary/pismennye-prinadlezhnosti",
                 "shard": "stationery3",
                 "query": "cat=17159"
+            },
+            {
+                "id": 17164,
+                "parent": 5486,
+                "name": "Рисование и лепка",
+                "seo": "Товары для рисования и лепки",
+                "url": "/catalog/knigi-i-kantstovary/kantstovary/risovanie-i-lepka",
+                "shard": "creativity11",
+                "query": "cat=17164"
             },
             {
                 "id": 16992,

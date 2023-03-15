@@ -165,11 +165,63 @@ def parse_category_json():
     return response.json()
 
 
-if __name__ == '__main__':
+# if __name__ == '__main__':
     # url = 'https://product-order-qnt.wildberries.ru/by-nm/?nm=13988939'
     # response = requests.get(url=url, proxies=proxies)
     # print(response.json())
     # pass
-    print(datetime.date.today())
-    print(collect_all_urls())
+    # print(datetime.date.today())
+    # print(collect_all_urls())
+# class Bank:
+#     def __init__(self, name, date):
+#         self.name = name
+#         self.date = date
+#     def __str__(self):
+#         return self.name + self.date
+#
+# sber = Bank("Sberbank", "1841")
+# x =str(sber)
+# print(x)
 
+# def foo(y, x) -> bool:
+#     y.append(str(x))
+#     return x % 2
+# y = ["sber", "bank"]
+# print([x for x in range(len(y)) if foo(y, x)])
+
+# x = 1,2,3
+# x == 4,5,6
+# print(x)
+
+# print(0 or 'sber', end='')
+# print(1841 or 'sber')
+
+# x = {1: "sber", 2: "bank", 3: None}
+# y = x.keys()
+# print(y)
+
+# def sber(s=[]) -> []:
+#     s.append("sber")
+#     return s
+# sber()
+# sber(["bank"])
+# result = sber() + sber(["bank"])
+# print(result)
+
+# def append(my_list):
+#     my_list = [0, 0]
+#     my_list[0] = 1
+#     return 2
+# my_list = (0, 1)
+# my_list[0] = append(my_list)
+# print(my_list)
+
+x = 0
+try:
+    print(x/0)
+except ZeroDivisionError:
+    print(x+1, sep='')
+except ZeroDivisionError:
+    print(x+2, sep='')
+except ZeroDivisionError:
+    print(x+3, sep='')
