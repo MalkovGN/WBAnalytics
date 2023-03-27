@@ -11,6 +11,10 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 # import psycopg2
 from pathlib import Path
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,12 +24,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-jl_#xv3y!39-3z#@xg5n%x1m(rp&d2p#95!vtvcg1u*cj6(1!c'
+SECRET_KEY = str(os.getenv('SECRET_KEY'))
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '80.249.146.118']
+ALLOWED_HOSTS = ['localhost', str(os.getenv('DATABASE_HOST'))]
 
 
 # Application definition
@@ -87,26 +91,16 @@ DATABASES = {
     # },
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'wb_db',
-        'USER': 'nikolai',
-        'PASSWORD': 'MopeDIStanr',
-        'HOST': '80.249.146.118',
-        'PORT': '5432',
+        'NAME': str(os.getenv('DATABASE_NAME')),
+        'USER': str(os.getenv('DATABASE_USER')),
+        'PASSWORD': str(os.getenv('DATABASE_PASSWORD')),
+        'HOST': str(os.getenv('DATABASE_HOST')),
+        'PORT': str(os.getenv('DATABASE_PORT')),
     }
 }
 
 
 DATA_UPLOAD_MAX_NUMBER_FIELDS = 8200
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'wb_db',
-#         'USER': 'nikolai',
-#         'PASSWORD': 'MopeDIStanr',
-#         'HOST': '80.249.146.118',
-#         'PORT': '5432',
-#     }
-# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
