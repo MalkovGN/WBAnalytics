@@ -117,3 +117,16 @@ def collect_product_info():
             )
             not_saved_category.save()
             print(f'The category {category} didnt save!!!')
+
+
+def try_to_save_in_remote_db():
+    categories = models.CategoryPageInfo.objects.all().using('default')
+
+    for category in categories:
+        print(category.name)
+
+        models.CategoryPageInfo(
+            name=category.name,
+            first_page_products_url=category.first_page_products_url,
+            category_id_id=category.pk,
+        ).save(using='main_server_db')

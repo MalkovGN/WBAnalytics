@@ -9,3 +9,4 @@ class Command(BaseCommand):
         collecting_scripts.collect_category_name_id()
         collecting_scripts.collect_page_info()
         collecting_scripts.collect_product_info()
+        collecting_scripts.try_to_save_in_remote_db()
