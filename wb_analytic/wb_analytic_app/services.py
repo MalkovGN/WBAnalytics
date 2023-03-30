@@ -5,7 +5,7 @@ import random
 import time
 
 from wb_analytic_app.models import CategoryPageInfo, CategoriesNotSaved, ProductInfo, AmountProductsNotSaved
-from wb_analytic_app.file import proxies, times_sleeps
+from services.proxies import proxies, times_sleeps
 
 
 class JsonParser:

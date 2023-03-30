@@ -119,6 +119,34 @@ def collect_product_info():
             print(f'The category {category} didnt save!!!')
 
 
+def retry_collect_product_info():
+    not_saved_categories = models.CategoriesNotSaved.objects.all()
+
+    for category in not_saved_categories:
+        request_url = category.first_page_products_url
+        proxy = random.choice(proxies)
+        time.sleep(random.choice(times_sleeps))
+
+        try:
+            response = requests.get(url=request_url, proxies=proxy)
+            products = response.json()['data']['products']
+
+            for product in products:
+                models.ProductInfo(
+                    product_id=product['id'],
+                    name=product['name'],
+                    feedbacks=product['feedbacks'],
+                    sale_price=product['salePriceU'],
+                    price=product['priceU'],
+                    category_id_id=category.pk,
+                ).save()
+                models.CategoriesNotSaved.objects.filter(pk=product.pk).delete()
+                print(f'The category {category} saved successfully!')
+        except Exception as E:
+            print(f'The category {category} didnt save!!!')
+            print(E)
+
+
 def try_to_save_in_remote_db():
     categories = models.CategoryPageInfo.objects.all().using('default')
 
